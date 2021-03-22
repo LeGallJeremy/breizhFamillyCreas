@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %} {% block body %}
+<div class="container">
+    <div class="container_content">
+        <div class="container_content_inner">
+            <div class="title">
+                <h1>BreizhFamillyCreas</h1>
+            </div>
+            <div class="par">
+                <p>Création d'article pour vos évenements</p>
+            </div>
+
+            <div class="btns">
+                <form>
+                    <button class="btns_more" type="submit" formaction="" style="width: 200px">
+            Mes réalisations
+          </button>
+                    <button class="btns_more" type="submit" formaction="" style="width: 200px">
+            La boutique
+          </button> {% if not app.user %}
+                    <button class="btns_more" type="submit" formaction="{{ path('security_login') }}" style="width: 200px">
+            Se connecter
+          </button> {% else %}
+                    <button class="btns_more" type="submit" formaction="{{ path('security_logout') }}" style="width: 200px">
+            Se déconnecter
+          </button> {% endif %}
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container_outer_img">
+        <div class="img-inner">
+            <img src="https://cdn.pixabay.com/photo/2016/08/26/01/41/flowers-1621066_1280.jpg" alt="" class="container_img" />
+        </div>
+    </div>
+</div>
+<div class="overlay"></div>
+
+{% endblock %}
