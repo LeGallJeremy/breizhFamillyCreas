@@ -39,7 +39,7 @@ class SecurityController extends AbstractController
             
             $manager->persist($user);
             $manager->flush();
-            $message = "Vous avez été enregistrez";
+            $message = "path('home')";
         }
 
         return $this->render('security/registration.html.twig');
