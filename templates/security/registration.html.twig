@@ -1,3 +1,4 @@
+
 {% extends 'base.html.twig' %} {% block body %}
 <div class="App-page">
     <div class="App-form">
@@ -8,10 +9,13 @@
                 <input placeholder="Nom" required name="_userName" type="text" class="app-form-registration" />
                 <input placeholder="Prénom" required name="_userFirstName" type="text" class="app-form-registration" />
                 <input placeholder="Email" required name="_userMail" type="text" class="app-form-registration" />
-                <input placeholder="Mot de passe" required name="_userPassword" type="password" class="app-form-registration" />
-                <input placeholder="Confirmer mot de passe" required name="_confirm_password" type="password" class="app-form-registration" />
+                <input placeholder="Mot de passe" required name="_userPassword" type="password"
+                    class="app-form-registration" />
+                <input placeholder="Confirmer mot de passe" required name="_confirm_password" type="password"
+                    class="app-form-registration" />
                 <input placeholder="Ville" required name="_userCity" type="text" class="app-form-registration" />
-                <input placeholder="Code Postal" required name="_userPostalCode" type="text" class="app-form-registration" />
+                <input placeholder="Code Postal" required name="_userPostalCode" type="text"
+                    class="app-form-registration" />
                 <input placeholder="Adresse" required name="_userAdress" type="text" class="app-form-registration" />
             </div>
 
@@ -19,8 +23,6 @@
                 <button class="btns_plus" type="submit">Inscription</button>
                 <a href="{{ path('security_login') }}">J'ai déja un compte</a>
             </div>
-
-
     </div>
 </div>
 {% endblock %}
